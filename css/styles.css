@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #6c63ff, #a59aff);
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #5a52d4;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.prediction-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.prediction-card:hover {
+  transform: translateY(-5px);
+}
+
+.prediction-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.bar-container {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.bar-container span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bar {
+  height: 15px;
+  background: #6c63ff;
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+  max-width: 600px;
+}
+
+footer {
+  background: linear-gradient(90deg, #48c6ef, #6f86d6);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}

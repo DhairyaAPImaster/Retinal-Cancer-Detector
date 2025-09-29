@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Eye Checker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    My Eye Checker
+  </header>
+
+  <main>
+    <h2>Detect Retinal Issues in Your Eye Photos</h2>
+    <p>Upload one or more eye images and let our AI analyze them.</p>
+
+    <input type="file" id="imageUpload" accept="image/*" multiple>
+    <button class="btn" onclick="analyzeImages()">Analyze</button>
+
+    <div id="results"></div>
+    <p class="note">
+      Disclaimer: If any image shows &gt;50% chance of retinal cancer, consult a medical professional.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Eye Checker | Educational Purpose Only
+  </footer>
+
+  <!-- TensorFlow.js for running the model -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
