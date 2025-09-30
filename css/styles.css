@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f7f9fc;
   margin: 0;
   padding: 0;
@@ -17,14 +17,6 @@ header {
   z-index: 100;
 }
 
-footer {
-  background: linear-gradient(90deg, #48c6ef, #6f86d6);
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 0.9rem;
-}
-
 main {
   padding: 20px;
   display: flex;
@@ -32,48 +24,20 @@ main {
   align-items: center;
 }
 
-/* Hidden input, styled with custom button */
-input[type="file"] {
-  display: none;
-}
-
-.custom-file-upload {
-  background-color: #6c63ff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin: 15px 0;
-}
-
-.custom-file-upload:hover {
-  background-color: #5a52d4;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* Analyze button */
 .btn {
   background-color: #6c63ff;
   color: white;
   border: none;
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  transition: 0.3s;
 }
 
 .btn:hover {
   background-color: #5a52d4;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 #results {
@@ -90,10 +54,9 @@ input[type="file"] {
   border-radius: 15px;
   padding: 15px;
   width: 280px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s;
-  position: relative;
 }
 
 .prediction-card:hover {
@@ -130,4 +93,12 @@ input[type="file"] {
   margin-top: 15px;
   text-align: center;
   max-width: 600px;
+}
+
+footer {
+  background: linear-gradient(90deg, #48c6ef, #6f86d6);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
 }
