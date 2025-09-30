@@ -5,28 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Eye Checker</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Full-screen sections */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Gradient backgrounds */
+    #hero {
+      background: linear-gradient(to right, #6c63ff, #a59aff);
+    }
+
+    #how-it-works {
+      background: linear-gradient(to right, #48c6ef, #6f86d6);
+    }
+
+    #why {
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background-color: #ffffff;
+      color: #6c63ff;
+      border: none;
+      padding: 15px 35px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    My Eye Checker
-  </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>“See Beyond the Surface”</h1>
+    <p>Quickly check your eye images for possible signs of retinal cancer or cataract using our AI-powered tool.</p>
+    <a href="#how-it-works" class="btn">Learn How</a>
+  </section>
 
-  <main>
-    <input type="file" id="imageUpload" accept="image/*" multiple>
-    <button class="btn" onclick="analyzeImages()">Analyze</button>
-
-    <div id="results"></div>
-    <p class="note">
-      Disclaimer: If any image shows &gt;50% chance of retinal cancer, consult a medical professional.
+  <!-- How It Works Section -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <p>
+      Upload your eye images and let our AI analyze them for potential issues. The model is trained on thousands of images and highlights risk with clear visual indicators.  
+      Results are displayed in easy-to-understand probability bars for each image.
     </p>
-  </main>
+    <a href="upload.html" class="btn">Get Started</a>
+  </section>
 
-  <footer>
-    &copy; 2025 My Eye Checker | Educational Purpose Only
-  </footer>
+  <!-- Why Section -->
+  <section id="why">
+    <h2>Why We Made This</h2>
+    <p>
+      Many retinal issues go undetected in early stages. Our goal is to provide a quick, educational tool to help people notice potential risks early and consult professionals if needed.  
+      This app is not a diagnosis but a first step to awareness.
+    </p>
+    <a href="upload.html" class="btn">Check Your Eyes</a>
+  </section>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
 </body>
 </html>
