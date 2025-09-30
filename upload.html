@@ -13,7 +13,11 @@
   </header>
 
   <main>
+    <label for="imageUpload" class="custom-file-upload">
+      Add Files
+    </label>
     <input type="file" id="imageUpload" accept="image/*" multiple>
+
     <button class="btn" onclick="analyzeImages()">Analyze</button>
     <div id="results"></div>
     <p class="note">Disclaimer: If any image shows >50% chance of retinal cancer, consult a medical professional.</p>
